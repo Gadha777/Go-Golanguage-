@@ -6,7 +6,7 @@ func Loop(){
 	for i := 1; i <= 5; i++ {
 		fmt.Println("Iteration:", i)
 	}
-	
+
 	str := "Hello"
 	for i := 0; i < len(str); i++ {
 		fmt.Println("Index:", i, "Character:", string(str[i]))
@@ -38,6 +38,7 @@ func Loop(){
 		i++ // Manual increment
 	}
 	fmt.Println()
+	
 	//range loop 
 	arr := [3]string{"Go", "is", "fun"}
 
