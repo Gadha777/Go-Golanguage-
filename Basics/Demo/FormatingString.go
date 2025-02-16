@@ -2,7 +2,7 @@ package Demo
 
 import "fmt"
 
-func Printformatt(){
+func Printingformat(){
 	fmt.Println("Printing and Formatting")
  //Print 
  fmt.Print("Hello, ")

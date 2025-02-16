@@ -2,17 +2,21 @@ package Demo
 
 import "fmt"
 func Map(){
-	person := map[string]int{
+	//string as key and int as value
+	person := map[string]int{	
 		"Alice": 25,
 		"Bob": 30,
 		"Charlie": 35,
 	}
-	delete(person, "Charlie") // Delete key "Charlie"
-
+	//looping map
 	for Name, Age := range person {
 		fmt.Println(Name , "-", Age)
 	}
+	fmt.Println(person)
+	fmt.Println(person["Bob"])
 	fmt.Println("Total Persons:", len(person)) // Output: Total Persons: 2
+
+	delete(person, "Charlie") // Delete key "Charlie"
 
 	//Nested Maps (Map inside a Map)
 	

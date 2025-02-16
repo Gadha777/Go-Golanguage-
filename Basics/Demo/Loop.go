@@ -43,6 +43,6 @@ func Loop(){
 	arr := [3]string{"Go", "is", "fun"}
 
 	for index, value := range arr {
-		fmt.Println("Index:", index, "Value:", value)
+		fmt.Printf("the value at the index %v is %v \n", index,value)
 	}
 }

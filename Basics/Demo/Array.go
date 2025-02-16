@@ -3,18 +3,14 @@ package Demo
 import "fmt"
 func Array(){
 	fmt.Print("Declaring an Array in Go\n")
-	//var arr1 [5]int  // Declares an array of size 5 with default values (0 for int)
-	//var arr2 = [3]int{1, 2, 3}  // Declares and initializes an array of size 3
-	arr := [3]int{1, 2, 3}  // Uses type inference
-
-	//fmt.Println(arr1)
-	//fmt.Println(arr2)
+	var arr [5]int  // Declares an array of size 5 with default values (0 for int)
+	var arr1 = [3]int{1, 2, 3}  // Declares and initializes an array of size 3 .Uses type inference
+	arr2 := [3]int{1, 2, 3}  //shorthand 
 	fmt.Println("1st array",arr)
-	//fmt.Println(arr[0]) // Access first element → 1
-	//fmt.Println(arr[1]) // Access second element → 2
+	fmt.Println(arr1, arr2)
 
-	arr[2] = 20 // Modify an element
-	fmt.Println("2nd modified array",arr) // Output: [1, 2, 20]
+	arr2[2] = 20 // Modify an element
+	fmt.Println("modified array",arr2) // Output: [1, 2, 20]
 	
 	// array using for Loop
 	fmt.Print("array using for Loop\n")
@@ -23,8 +19,8 @@ func Array(){
 	for i := 0; i < len(array); i++ { // Iterating over the array using a for loop
 		fmt.Println(array[i]) // Printing each element of the array
 	}
-fmt.Print("\n")
-fmt.Println("for each loop")
+	
+	fmt.Println()
 	array2 := [3]string{"Go", "is", "awesome"} // Declares an array of size 3 with string elements
 
 	for index, value := range array2 { // Iterates over the array using a for-range loop
