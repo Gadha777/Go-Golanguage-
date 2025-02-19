@@ -23,6 +23,8 @@ func main() {
 	fmt.Println("12. MultipleReturnValue")
 	fmt.Println("13. pass by value")
 	fmt.Println("14. Inputs")
+	fmt.Println("15. Receiver function")
+	fmt.Println("16. Savefile")
 
 
 	fmt.Print("Enter your choice: ")
@@ -55,13 +57,15 @@ func main() {
 		fn, sn :=Demo.MultipleReturnValue("Go Language")
 		fmt.Println(fn, sn)
 	case 13:
-		num := 10
-		Demo.ChangeValue(num)
-		fmt.Println("Outside function:", num) // Will still print 10 (unchanged)
+		num1 := 10
+		Demo.ChangeValue(num1)
+		fmt.Println("Outside function:", num1) // Will still print 10 (unchanged)
 	case 14:
 		Demo.Inputs()
 	case 15:
 		Demo.Receiverfunction()
+	case 16:
+		Demo.SaveFile()
 	default:
 		fmt.Println("Invalid choice! Please select a valid function.")
 	}
